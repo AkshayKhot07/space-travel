@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair:wght@400&display=swap");
+
+:root {
+  --header-height: 3.5rem;
+
+  /* Colors */
+  --body-color: #0b0d17;
+  --title-color: #ffffff;
+  --text-color: #d0d6f9;
+
+  /* Font sizes */
+  --body-font: "Bellefair", sans-serif;
+  --h1-font-size: 150px;
+  --h2-font-size: 100px;
+  --h3-font-size: 56px;
+  --h4-font-size: 32px;
+  --h5-font-size: 28px;
+  --sub-heading1-font-size: 28px;
+  --sub-heading2-font-size: 14px;
+  --nav-text: 16px;
+  --body-text: 15px;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+input,
+button,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--body-text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: url(/assets/images/home/background-home-mobile.jpg) no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo {
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  text-transform: uppercase;
+  font-size: var(--nav-text);
+  color: var(--title-color);
+}
+
+.nav__link-id {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.close__icon,
+.menu__icon {
+  color: var(--title-color);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.menu__icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background: rgba(151, 151, 151, 0.5);
+    color: var(--title-color);
+    width: 70%;
+    height: 100%;
+    top: 0;
+    /* right: 0; */
+    right: -100%;
+    z-index: var(--z-fixed);
+    padding: 5rem 1rem;
+  }
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.show-menu {
+  right: 0;
+}
+
+.hide-menu-icon {
+  display: none;
+}
