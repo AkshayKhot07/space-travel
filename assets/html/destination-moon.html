@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Space Travel</title>
+  </head>
+  <body class="destination__bg">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="logo__container" id="logo-container">
+          <img
+            src="../images/shared/logo.svg"
+            alt="website logo"
+            class="logo"
+          />
+        </div>
+
+        <!-- prettier-ignore -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../../index.html" class="nav__link"><span class="nav__link-id">00</span> Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#moon" class="nav__link"><span class="nav__link-id">01</span> Destination</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"><span class="nav__link-id">02</span> Crew</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"><span class="nav__link-id">04</span> Technology</a>
+            </li>
+          </ul>
+
+          <div class="nav__close">
+            <i class="ri-close-fill close__icon"></i>
+          </div>
+        </div>
+
+        <div class="menu__container">
+          <i class="ri-menu-line menu__icon"></i>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="destination__container" id="moon">
+        <div class="destination__sub-heading">
+          <p class="destination__sub-heading-text">
+            <span>01</span> Pick your destination
+          </p>
+        </div>
+        <div class="destination__image-container">
+          <img
+            src="../images/destination/image-moon.png"
+            alt="moon image"
+            class="destination__image"
+          />
+        </div>
+        <div class="destination__details-container">
+          <div class="destination__details-navbar">
+            <ul class="dest__nav-list">
+              <li class="dest__nav-item">
+                <a href="#" class="dest__nav-link dest__nav-link-moon">Moon</a>
+              </li>
+              <li class="dest__nav-item">
+                <a href="./destination-mars.html" class="dest__nav-link"
+                  >Mars</a
+                >
+              </li>
+              <li class="dest__nav-item">
+                <a href="./destination-europa.html" class="dest__nav-link"
+                  >Europa</a
+                >
+              </li>
+              <li class="dest__nav-item">
+                <a href="./destination-titan.html" class="dest__nav-link"
+                  >Titan</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="destination__details-heading-desp">
+            <div class="destination__details-heading">
+              <h1 class="destination__details-heading-text">MOON</h1>
+            </div>
+            <div class="destination__details-desp">
+              <p class="destination__details-desp-text">
+                See our planet as you’ve never seen it before. A perfect
+                relaxing trip away to help regain perspective and come back
+                refreshed. While you’re there, take in some history by visiting
+                the Luna 2 and Apollo 11 landing sites.
+              </p>
+            </div>
+          </div>
+          <div class="destination__details-dist-time">
+            <div class="destination__details-dist">
+              <p>Avg. distance</p>
+              <h4>384,400 km</h4>
+            </div>
+            <div class="destination__details-time">
+              <p>Est. travel time</p>
+              <h4>3 days</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

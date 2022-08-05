@@ -94,7 +94,7 @@ body {
 
 .menu__icon {
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   right: 1rem;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .nav__close {
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   right: 1rem;
 }
 
@@ -181,4 +181,131 @@ body {
 .home__explore-text {
   color: black;
   font-size: var(--sub-heading1-font-size);
+}
+
+/* ======== Destination ========= */
+
+.destination__bg {
+  background: url(/assets/images/destination/background-destination-mobile.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.destination__sub-heading-text {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-size: var(--sub-heading2-font-size);
+  letter-spacing: 1px;
+}
+
+.destination__sub-heading-text span {
+  font-weight: bold;
+  color: var(--title-color);
+  opacity: 0.25;
+}
+
+.destination__image {
+  max-width: 60%;
+  height: auto;
+}
+
+.dest__nav-list {
+  display: flex;
+  column-gap: 20px;
+}
+
+.dest__nav-link {
+  text-transform: uppercase;
+  font-size: var(--sub-heading2-font-size);
+  color: var(--text-color);
+  padding-bottom: 5px;
+}
+
+#moon .dest__nav-link-moon {
+  color: var(--title-color);
+  border-bottom: 3px solid var(--title-color);
+}
+
+#mars .dest__nav-link-mars {
+  color: var(--title-color);
+  border-bottom: 3px solid var(--title-color);
+}
+
+#europa .dest__nav-link-europa {
+  color: var(--title-color);
+  border-bottom: 3px solid var(--title-color);
+}
+
+#titan .dest__nav-link-titan {
+  color: var(--title-color);
+  border-bottom: 3px solid var(--title-color);
+}
+
+.destination__details-heading-text {
+  font-size: var(--h3-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.destination__details-desp {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--text-color);
+  width: 90%;
+}
+
+.destination__details-desp-text {
+  color: var(--text-color);
+  font-size: var(--body-text);
+}
+
+.destination__details-dist p,
+.destination__details-time p {
+  font-size: var(--sub-heading2-font-size);
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.destination__details-dist h4,
+.destination__details-time h4 {
+  color: var(--title-color);
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+}
+
+.destination__container {
+  padding: 1rem 1rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.5rem;
+}
+
+.destination__details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 1.5rem;
+}
+
+.destination__details-heading-desp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.destination__details-dist-time {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
 }
