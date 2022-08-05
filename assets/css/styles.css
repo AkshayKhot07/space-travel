@@ -101,7 +101,6 @@ body {
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    background: rgba(151, 151, 151, 0.5);
     color: var(--title-color);
     width: 70%;
     height: 100%;
@@ -110,6 +109,10 @@ body {
     right: -100%;
     z-index: var(--z-fixed);
     padding: 5rem 1rem;
+
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 }
 
@@ -131,4 +134,51 @@ body {
 
 .hide-menu-icon {
   display: none;
+}
+
+/* Home */
+
+.home {
+  text-align: center;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__sub-heading-text {
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 2.35;
+  font-size: var(--sub-heading2-font-size);
+}
+
+.home__main-heading-text {
+  color: var(--title-color);
+  text-transform: uppercase;
+  font-size: var(--h2-font-size);
+}
+
+.home__description-text {
+  color: var(--text-color);
+  font-size: var(--body-text);
+}
+
+.home__explore {
+  height: 10rem;
+  width: 10rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.home__explore-text {
+  color: black;
+  font-size: var(--sub-heading1-font-size);
 }

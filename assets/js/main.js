@@ -18,3 +18,11 @@ if (navClose) {
     menuIconContainer.classList.remove("hide-menu-icon");
   });
 }
+
+const navLinks = document.querySelectorAll(".nav__link");
+navLinks.forEach((navlink) => {
+  navlink.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+    menuIconContainer.classList.remove("hide-menu-icon");
+  });
+});
