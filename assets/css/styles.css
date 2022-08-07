@@ -381,7 +381,7 @@ body {
   width: 10px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.25);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .crew__header-desp {
@@ -407,4 +407,38 @@ body {
   font-size: var(--body-text);
   color: var(--text-color);
   line-height: 1.5;
+}
+
+.crew__slider-button {
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.crew__slider-container {
+  position: relative;
+}
+.crew__slider-button-left {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+
+.crew__slider-button-left:hover {
+  transform: translateX(-0.25rem);
+  transition: 0.3s;
+}
+
+.crew__slider-button-right {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+}
+
+.crew__slider-button-right:hover {
+  transform: translateX(0.25rem);
+  transition: 0.3s;
 }

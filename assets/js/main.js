@@ -57,6 +57,11 @@ const sliderBothSides = function () {
   }
 };
 
+const crewSliderBtnLeft = document.querySelector(".crew__slider-button-left");
+const crewSliderBtnRight = document.querySelector(".crew__slider-button-right");
+crewSliderBtnRight.addEventListener("click", sliderBothSides.bind(true));
+crewSliderBtnLeft.addEventListener("click", sliderBothSides.bind(false));
+
 window.addEventListener("keydown", function (e) {
   if (e.key == "ArrowRight") {
     sliderBothSides.bind(true)();
